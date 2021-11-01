@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Meer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    <section>
+        <h2>Contact MEER</h2>
+
+        <div class="banner">
+            <div class="blocks"></div>
+        </div>
+        <div class="color "></div>
+        <div class="color "></div>
+        <div class="color "></div>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/shahmir.shah.798"><i class=" fa fa-facebook "></i></a>
+            </li>
+            <li><a href="https://twitter.com/AKA_MEER"><i class="fa fa-twitter "></i></a></li>
+            <li><a href="https://www.linkedin.com/in/shah-meer-a27650224/"><i class="fa fa-linkedin "></i></a></li>
+            <li>
+                <a href=" https://www.instagram.com/aka.meer_/ "><i class="fa fa-instagram "></i></a>
+            </li>
+            <li><a href="https://web.whatsapp.com/ "><i class="fa fa-whatsapp "></i></a></li>
+        </ul>
+
+    </section>
+    <script>
+        const banner = document.getElementsByClassName('banner')[0];
+        const blocks = document.getElementsByClassName('blocks');
+
+        for (var i = 1; i < 400; i++) {
+            banner.innerHTML += "<div class='blocks'></div>";
+            blocks[i].style.animationDelay = '${i * 0.05}s';
+        }
+    </script>
+</body>
+
+</html>
